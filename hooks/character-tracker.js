@@ -30,9 +30,11 @@ process.stdin.on('end', () => {
     const prompt = (data.prompt || '').trim();
     const lower = prompt.toLowerCase();
 
-    // Handle /character commands
-    if (lower.startsWith('/character')) {
-      const parts = lower.split(/\s+/);
+    // Handle both /character-builder:character and shorthand /character
+    const normalized = lower
+      .replace(/^\/character-builder:character/, '/character');
+    if (normalized.startsWith('/character')) {
+      const parts = normalized.split(/\s+/);
       const arg = parts[1] || '';
 
       if (arg === 'off' || arg === 'none' || arg === 'normal') {

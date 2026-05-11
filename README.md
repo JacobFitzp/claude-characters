@@ -40,9 +40,9 @@ claude --plugin-dir ./claude-characters
 ## Usage
 
 ```
-/character pirate       # Activate a character
-/character off          # Back to normal
-/character list         # Show all characters with descriptions
+/character-builder:character pirate   # Activate a character
+/character-builder:character off      # Back to normal
+/character-builder:character list     # Show all characters with descriptions
 ```
 
 Characters persist across sessions. The active character survives context compression and long conversations.
@@ -88,7 +88,7 @@ tagline: One-line summary shown in per-turn context reminders
 - Code blocks are always written normally — characters don't touch syntax
 - Technical terms stay exact regardless of character
 - Security warnings and destructive operation confirmations use plain language first, then resume character voice
-- `/character off` or saying "normal mode" deactivates
+- `/character-builder:character off` or saying "normal mode" deactivates
 
 ---
 
