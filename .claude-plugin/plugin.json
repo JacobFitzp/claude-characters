@@ -1,0 +1,38 @@
+{
+  "name": "character-builder",
+  "repository": "https://github.com/JacobFitzp/claude-character-builder",
+  "homepage": "https://github.com/JacobFitzp/claude-character-builder",
+  "version": "1.0.0",
+  "description": "Personality characters for Claude Code. Pirate, gangster, Shakespeare, Yoda, and more — full technical accuracy preserved.",
+  "author": {
+    "name": "Jacob Fitzpatrick",
+    "email": "jacobfitzpatrick1303@gmail.com"
+  },
+  "keywords": ["personality", "characters", "fun", "pirate", "shakespeare", "yoda"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/character-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading character mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/character-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Checking character mode..."
+          }
+        ]
+      }
+    ]
+  }
+}

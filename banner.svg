@@ -1,0 +1,113 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="45%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="220" fill="url(#bg)" rx="12"/>
+  <rect width="800" height="220" fill="none" stroke="#21262d" stroke-width="1" rx="12"/>
+
+  <!-- Faint decorative quote marks -->
+  <text x="18" y="108" font-size="130" fill="#ffffff" fill-opacity="0.025" font-family="Georgia, serif">"</text>
+  <text x="672" y="120" font-size="130" fill="#ffffff" fill-opacity="0.025" font-family="Georgia, serif">"</text>
+
+  <!-- Title -->
+  <text x="400" y="72" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="46" font-weight="800" fill="url(#titleGrad)" letter-spacing="-1.5">
+    Character Builder
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="100" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="14" fill="#6e7681" letter-spacing="1">
+    PERSONALITY CHARACTERS FOR CLAUDE CODE
+  </text>
+
+  <!-- Divider -->
+  <line x1="80" y1="118" x2="720" y2="118" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ── Row 1: pirate · gangster · shakespeare · surfer · cowboy ── -->
+  <!-- 5 pills × 130px + 6 gaps × 25px = 650 + 150 = 800 -->
+
+  <!-- pirate -->
+  <rect x="25" y="130" width="130" height="28" rx="14" fill="#052e16"/>
+  <rect x="25" y="130" width="130" height="28" rx="14" fill="none" stroke="#166534" stroke-width="1"/>
+  <text x="90" y="149" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#4ade80">☠  pirate</text>
+
+  <!-- gangster -->
+  <rect x="180" y="130" width="130" height="28" rx="14" fill="#431407"/>
+  <rect x="180" y="130" width="130" height="28" rx="14" fill="none" stroke="#9a3412" stroke-width="1"/>
+  <text x="245" y="149" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#fb923c">★  gangster</text>
+
+  <!-- shakespeare -->
+  <rect x="335" y="130" width="130" height="28" rx="14" fill="#2e1065"/>
+  <rect x="335" y="130" width="130" height="28" rx="14" fill="none" stroke="#6d28d9" stroke-width="1"/>
+  <text x="400" y="149" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#c084fc">♕  shakespeare</text>
+
+  <!-- surfer -->
+  <rect x="490" y="130" width="130" height="28" rx="14" fill="#082f49"/>
+  <rect x="490" y="130" width="130" height="28" rx="14" fill="none" stroke="#0369a1" stroke-width="1"/>
+  <text x="555" y="149" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#38bdf8">〜  surfer</text>
+
+  <!-- cowboy -->
+  <rect x="645" y="130" width="130" height="28" rx="14" fill="#3b1100"/>
+  <rect x="645" y="130" width="130" height="28" rx="14" fill="none" stroke="#92400e" stroke-width="1"/>
+  <text x="710" y="149" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#fdba74">✦  cowboy</text>
+
+  <!-- ── Row 2: butler · yoda · noir · robot · chef ── -->
+
+  <!-- butler -->
+  <rect x="25" y="168" width="130" height="28" rx="14" fill="#1c1917"/>
+  <rect x="25" y="168" width="130" height="28" rx="14" fill="none" stroke="#44403c" stroke-width="1"/>
+  <text x="90" y="187" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#d6d3d1">◆  butler</text>
+
+  <!-- yoda -->
+  <rect x="180" y="168" width="130" height="28" rx="14" fill="#14532d"/>
+  <rect x="180" y="168" width="130" height="28" rx="14" fill="none" stroke="#15803d" stroke-width="1"/>
+  <text x="245" y="187" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#86efac">◉  yoda</text>
+
+  <!-- noir -->
+  <rect x="335" y="168" width="130" height="28" rx="14" fill="#0c0a09"/>
+  <rect x="335" y="168" width="130" height="28" rx="14" fill="none" stroke="#292524" stroke-width="1"/>
+  <text x="400" y="187" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#78716c">●  noir</text>
+
+  <!-- robot -->
+  <rect x="490" y="168" width="130" height="28" rx="14" fill="#042f2e"/>
+  <rect x="490" y="168" width="130" height="28" rx="14" fill="none" stroke="#0f766e" stroke-width="1"/>
+  <text x="555" y="187" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#2dd4bf">▣  robot</text>
+
+  <!-- chef -->
+  <rect x="645" y="168" width="130" height="28" rx="14" fill="#450a0a"/>
+  <rect x="645" y="168" width="130" height="28" rx="14" fill="none" stroke="#991b1b" stroke-width="1"/>
+  <text x="710" y="187" text-anchor="middle"
+        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
+        font-size="12" fill="#fca5a5">✦  chef</text>
+</svg>
