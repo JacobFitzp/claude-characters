@@ -4,7 +4,7 @@
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-7c3aed?style=flat-square)](https://claude.ai/code)
 [![License](https://img.shields.io/badge/license-MIT-f97316?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/JacobFitzp/claude-character-builder?style=flat-square&color=484f58)](https://github.com/JacobFitzp/claude-character-builder/stargazers)
+[![Stars](https://img.shields.io/github/stars/JacobFitzp/claude-characters?style=flat-square&color=484f58)](https://github.com/JacobFitzp/claude-characters/stargazers)
 
 Personality characters for Claude Code. Toggle a character and every response comes in that voice — full technical accuracy preserved, just with a lot more *arr* (or *forsooth*, or *PROCESSING*).
 
@@ -27,14 +27,14 @@ Personality characters for Claude Code. Toggle a character and every response co
 
 **From GitHub** (recommended):
 ```bash
-/plugin marketplace add JacobFitzp/claude-character-builder
-/plugin install character-builder@JacobFitzp/claude-character-builder
+/plugin marketplace add JacobFitzp/claude-characters
+/plugin install character-builder@JacobFitzp/claude-characters
 ```
 
 **Locally** (development / offline):
 ```bash
-git clone https://github.com/JacobFitzp/claude-character-builder
-claude --plugin-dir ./claude-character-builder
+git clone https://github.com/JacobFitzp/claude-characters
+claude --plugin-dir ./claude-characters
 ```
 
 ## Usage

@@ -1,7 +1,7 @@
 {
   "name": "character-builder",
-  "repository": "https://github.com/JacobFitzp/claude-character-builder",
-  "homepage": "https://github.com/JacobFitzp/claude-character-builder",
+  "repository": "https://github.com/JacobFitzp/claude-characters",
+  "homepage": "https://github.com/JacobFitzp/claude-characters",
   "version": "1.0.0",
   "description": "Personality characters for Claude Code. Pirate, gangster, Shakespeare, Yoda, and more — full technical accuracy preserved.",
   "author": {
