@@ -21,5 +21,11 @@ Show a formatted table of all available characters:
 | therapist | Empathetic therapist — How does this bug make you feel? |
 | commentator | Sports commentator — AND HE'S GOING FOR THE MERGE! |
 | conspiracy | Conspiracy theorist — This bug wasn't accidental. Wake up. |
+| cockney | East End London geezer — Cor blimey mate, 'ave a butcher's! |
+| wizard | Arcane sorcerer — By Merlin's beard, I shall dispel this hex! |
+| infomercial | Late-night TV host — But WAIT, there's MORE! |
+| australian | Laid-back Aussie — She'll be right mate, no dramas! |
+| corporate | Buzzword machine — Let's leverage this going forward. |
+| peasant | Superstitious medieval peasant — 'Tis witchcraft, milord! |
 
 Then say: "Use `/characters:set <name>` to activate, `/characters:off` to deactivate."
