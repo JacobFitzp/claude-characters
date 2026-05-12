@@ -33,7 +33,8 @@ Personality characters for Claude Code. Toggle a character and every response co
 ## Install
 
 ```bash
-claude plugin marketplace add JacobFitzp/claude-characters && claude plugin install characters@characters
+claude plugin marketplace add JacobFitzp/claude-characters
+claude plugin install characters@characters
 ```
 
 **Locally** (development):
