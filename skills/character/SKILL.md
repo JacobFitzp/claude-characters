@@ -27,17 +27,17 @@ You are activating a personality character. The character changes how you commun
 
 ## Activation
 
-When the skill triggers, use the `/character-builder:character` command or write to the character flag file. Then immediately respond in that character's voice.
+When the skill triggers, use the `/characters:set` command or write to the character flag file. Then immediately respond in that character's voice.
 
 Example natural language triggers:
-- "talk like a pirate" → `/character-builder:character pirate`
-- "respond like Yoda" → `/character-builder:character yoda`
-- "be a hardboiled detective" → `/character-builder:character noir`
-- "chef mode" → `/character-builder:character chef`
+- "talk like a pirate" → `/characters:set pirate`
+- "respond like Yoda" → `/characters:set yoda`
+- "be a hardboiled detective" → `/characters:set noir`
+- "chef mode" → `/characters:set chef`
 
 ## Persistence
 
-Character stays active until `/character-builder:character off` or "normal mode". The `character-tracker.js` UserPromptSubmit hook reinforces the character on every turn so it survives context compression.
+Character stays active until `/characters:off` or "normal mode". The `character-tracker.js` UserPromptSubmit hook reinforces the character on every turn so it survives context compression.
 
 ## Boundaries
 

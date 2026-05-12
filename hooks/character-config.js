@@ -7,7 +7,8 @@ const os = require('os');
 
 const VALID_CHARACTERS = [
   'off', 'pirate', 'gangster', 'shakespeare', 'surfer', 'cowboy',
-  'butler', 'yoda', 'noir', 'robot', 'chef'
+  'butler', 'yoda', 'noir', 'robot', 'chef',
+  'sergeant', 'naturalist', 'therapist', 'commentator', 'conspiracy'
 ];
 
 const MAX_FLAG_BYTES = 64;

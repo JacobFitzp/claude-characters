@@ -1,12 +1,12 @@
 {
-  "name": "character-builder",
+  "name": "characters",
   "owner": {
     "name": "Jacob Fitzpatrick",
     "github": "JacobFitzp"
   },
   "plugins": [
     {
-      "name": "character-builder",
+      "name": "characters",
       "version": "1.0.0",
       "description": "Personality characters for Claude Code. Pirate, gangster, Shakespeare, Yoda, and more — full technical accuracy preserved.",
       "author": {

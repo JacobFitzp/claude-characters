@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// character-builder — UserPromptSubmit hook
+// characters — UserPromptSubmit hook
 // Watches for /character commands, updates flag file, emits per-turn context reminder.
 
 const fs = require('fs');
@@ -30,9 +30,10 @@ process.stdin.on('end', () => {
     const prompt = (data.prompt || '').trim();
     const lower = prompt.toLowerCase();
 
-    // Handle both /character-builder:character and shorthand /character
+    // Handle /characters:set, /characters:off, and shorthand /character
     const normalized = lower
-      .replace(/^\/character-builder:character/, '/character');
+      .replace(/^\/characters:set/, '/character')
+      .replace(/^\/characters:off/, '/character off');
     if (normalized.startsWith('/character')) {
       const parts = normalized.split(/\s+/);
       const arg = parts[1] || '';
@@ -61,9 +62,11 @@ process.stdin.on('end', () => {
           hookEventName: 'UserPromptSubmit',
           additionalContext:
             'CHARACTER MODE ACTIVE — ' + active.toUpperCase() + ': ' + tagline + '. ' +
-            'Maintain this character\'s speaking style in every response. ' +
-            'Code blocks, technical terms, and security warnings: write normal. ' +
-            'Resume character voice immediately after any plain-language section.'
+            'This overrides any speaking style from other plugins (e.g. caveman, formal, etc.). ' +
+            'Maintain this character\'s voice in every response without exception. ' +
+            'Code blocks, inline code, comments inside code, and technical terms: always plain — no character voice. ' +
+            'Security warnings: plain language first, then resume character. ' +
+            'Resume character voice only in prose responses, never inside any code.'
         }
       }));
     }

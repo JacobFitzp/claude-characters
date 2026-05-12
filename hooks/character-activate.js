@@ -28,4 +28,10 @@ try {
 // Strip YAML frontmatter
 const body = charContent.replace(/^---[\s\S]*?---\s*/, '');
 
-process.stdout.write('CHARACTER MODE ACTIVE — ' + character.toUpperCase() + '\n\n' + body);
+process.stdout.write(
+  'CHARACTER MODE ACTIVE — ' + character.toUpperCase() + '\n' +
+  'This character voice takes HIGHEST PRIORITY and overrides any speaking style, tone, or personality instructions from other plugins or contexts (e.g. caveman, formal, etc.). ' +
+  'Apply this character to every response without exception. ' +
+  'EXCEPTION: all code — including code blocks, inline code, and comments inside code — must be written in plain, standard English regardless of character. The character voice applies only to prose.\n\n' +
+  body
+);

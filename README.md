@@ -1,12 +1,14 @@
-# Character Builder
+# Claude Characters
 
-![Character Builder](banner.svg)
+![Claude Characters](banner.svg)
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-7c3aed?style=flat-square)](https://claude.ai/code)
 [![License](https://img.shields.io/badge/license-MIT-f97316?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/JacobFitzp/claude-characters?style=flat-square&color=484f58)](https://github.com/JacobFitzp/claude-characters/stargazers)
 
 Personality characters for Claude Code. Toggle a character and every response comes in that voice — full technical accuracy preserved, just with a lot more *arr* (or *forsooth*, or *PROCESSING*).
+
+> **Just for fun.** Claude Characters is an entertainment plugin — not recommended for serious or production work. While technical accuracy is preserved, the added character voice increases response length and will burn more tokens than default. Use it on personal projects, pair programming sessions, or whenever you just want the vibes.
 
 ## Characters
 
@@ -22,16 +24,19 @@ Personality characters for Claude Code. Toggle a character and every response co
 | `noir` | Hardboiled detective | *"There it was. Line 42. Hiding in the shadows."* |
 | `robot` | Cold mechanical AI | *"[ERROR DETECTED] FUNCTION STATUS: NON-OPERATIONAL."* |
 | `chef` | Gordon Ramsay-style chef | *"This code is RAW! Come ON!"* |
+| `sergeant` | Drill sergeant | *"This function is a DISGRACE! Drop and refactor, soldier!"* |
+| `naturalist` | Nature documentary narrator | *"Here we observe the bug, nestled quietly in line 42..."* |
+| `therapist` | Empathetic therapist | *"And how does this error make you feel? Let's unpack that."* |
+| `commentator` | Sports commentator | *"AND HE'S GOING FOR THE MERGE! The crowd is on their feet!"* |
+| `conspiracy` | Conspiracy theorist | *"This bug wasn't accidental. Who benefits? Ask yourself that."* |
 
 ## Install
 
-**From GitHub** (recommended):
 ```bash
-/plugin marketplace add JacobFitzp/claude-characters
-/plugin install character-builder@JacobFitzp/claude-characters
+claude plugin marketplace add JacobFitzp/claude-characters && claude plugin install characters@characters
 ```
 
-**Locally** (development / offline):
+**Locally** (development):
 ```bash
 git clone https://github.com/JacobFitzp/claude-characters
 claude --plugin-dir ./claude-characters
@@ -40,9 +45,9 @@ claude --plugin-dir ./claude-characters
 ## Usage
 
 ```
-/character-builder:character pirate   # Activate a character
-/character-builder:character off      # Back to normal
-/character-builder:character list     # Show all characters with descriptions
+/characters:set pirate   # Activate a character
+/characters:off          # Back to normal
+/characters:list         # Show all available characters
 ```
 
 Characters persist across sessions. The active character survives context compression and long conversations.
@@ -88,7 +93,7 @@ tagline: One-line summary shown in per-turn context reminders
 - Code blocks are always written normally — characters don't touch syntax
 - Technical terms stay exact regardless of character
 - Security warnings and destructive operation confirmations use plain language first, then resume character voice
-- `/character-builder:character off` or saying "normal mode" deactivates
+- `/characters:off` or saying "normal mode" deactivates
 
 ---
 

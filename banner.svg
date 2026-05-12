@@ -1,113 +1,74 @@
-<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="175" viewBox="0 0 800 175" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
+      <stop offset="0%" stop-color="#0d0f1a"/>
+      <stop offset="100%" stop-color="#150d2a"/>
     </linearGradient>
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f97316"/>
       <stop offset="45%" stop-color="#ec4899"/>
       <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-80%" width="160%" height="360%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="220" fill="url(#bg)" rx="12"/>
-  <rect width="800" height="220" fill="none" stroke="#21262d" stroke-width="1" rx="12"/>
+  <rect width="800" height="175" fill="url(#bg)" rx="12"/>
+  <rect width="800" height="175" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" rx="12"/>
 
-  <!-- Faint decorative quote marks -->
-  <text x="18" y="108" font-size="130" fill="#ffffff" fill-opacity="0.025" font-family="Georgia, serif">"</text>
-  <text x="672" y="120" font-size="130" fill="#ffffff" fill-opacity="0.025" font-family="Georgia, serif">"</text>
+  <!-- Ambient glow behind title -->
+  <ellipse cx="400" cy="72" rx="220" ry="45" fill="#a78bfa" fill-opacity="0.06"/>
+
+  <!-- Scattered sparkles -->
+  <text x="52"  y="38"  font-size="14" fill="#f97316" fill-opacity="0.55" font-family="sans-serif" filter="url(#softglow)">✦</text>
+  <text x="118" y="22"  font-size="8"  fill="#ec4899" fill-opacity="0.45" font-family="sans-serif">✦</text>
+  <text x="198" y="30"  font-size="6"  fill="#a78bfa" fill-opacity="0.35" font-family="sans-serif">✦</text>
+  <text x="610" y="25"  font-size="7"  fill="#f97316" fill-opacity="0.35" font-family="sans-serif">✦</text>
+  <text x="685" y="38"  font-size="12" fill="#a78bfa" fill-opacity="0.5"  font-family="sans-serif" filter="url(#softglow)">✦</text>
+  <text x="748" y="22"  font-size="7"  fill="#ec4899" fill-opacity="0.4"  font-family="sans-serif">✦</text>
+  <text x="38"  y="90"  font-size="5"  fill="#ec4899" fill-opacity="0.3"  font-family="sans-serif">·</text>
+  <text x="763" y="85"  font-size="5"  fill="#a78bfa" fill-opacity="0.3"  font-family="sans-serif">·</text>
 
   <!-- Title -->
-  <text x="400" y="72" text-anchor="middle"
+  <text x="400" y="75" text-anchor="middle"
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="46" font-weight="800" fill="url(#titleGrad)" letter-spacing="-1.5">
-    Character Builder
-  </text>
+        font-size="48" font-weight="800" fill="url(#titleGrad)" letter-spacing="-1.5"
+        filter="url(#glow)">Claude Characters</text>
 
-  <!-- Subtitle -->
-  <text x="400" y="100" text-anchor="middle"
+  <!-- Tagline -->
+  <text x="400" y="101" text-anchor="middle"
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="14" fill="#6e7681" letter-spacing="1">
-    PERSONALITY CHARACTERS FOR CLAUDE CODE
-  </text>
+        font-size="12" fill="#6e7681" letter-spacing="2.5">PICK A VOICE. ANY VOICE.</text>
 
-  <!-- Divider -->
-  <line x1="80" y1="118" x2="720" y2="118" stroke="#21262d" stroke-width="1"/>
+  <!-- Character quote snippets -->
+  <!-- Pirate -->
+  <rect x="38"  y="116" width="218" height="34" rx="9" fill="#052e16" fill-opacity="0.8"/>
+  <rect x="38"  y="116" width="218" height="34" rx="9" fill="none" stroke="#166534" stroke-width="1"/>
+  <text x="57"  y="130" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#4ade80">☠ pirate</text>
+  <text x="57"  y="144" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#86efac" fill-opacity="0.8">"Arrr, this bug be cursed!"</text>
 
-  <!-- ── Row 1: pirate · gangster · shakespeare · surfer · cowboy ── -->
-  <!-- 5 pills × 130px + 6 gaps × 25px = 650 + 150 = 800 -->
+  <!-- Butler -->
+  <rect x="291" y="116" width="218" height="34" rx="9" fill="#1c1917" fill-opacity="0.8"/>
+  <rect x="291" y="116" width="218" height="34" rx="9" fill="none" stroke="#44403c" stroke-width="1"/>
+  <text x="310" y="130" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#d6d3d1">◆ butler</text>
+  <text x="310" y="144" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#a8a29e" fill-opacity="0.8">"A minor irregularity, sir."</text>
 
-  <!-- pirate -->
-  <rect x="25" y="130" width="130" height="28" rx="14" fill="#052e16"/>
-  <rect x="25" y="130" width="130" height="28" rx="14" fill="none" stroke="#166534" stroke-width="1"/>
-  <text x="90" y="149" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#4ade80">☠  pirate</text>
+  <!-- Chef -->
+  <rect x="544" y="116" width="218" height="34" rx="9" fill="#450a0a" fill-opacity="0.8"/>
+  <rect x="544" y="116" width="218" height="34" rx="9" fill="none" stroke="#991b1b" stroke-width="1"/>
+  <text x="563" y="130" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#fca5a5">✦ chef</text>
+  <text x="563" y="144" font-family="'SF Mono','Cascadia Code','Fira Code',monospace" font-size="10" fill="#fda4a4" fill-opacity="0.8">"This code is RAW! Come ON!"</text>
 
-  <!-- gangster -->
-  <rect x="180" y="130" width="130" height="28" rx="14" fill="#431407"/>
-  <rect x="180" y="130" width="130" height="28" rx="14" fill="none" stroke="#9a3412" stroke-width="1"/>
-  <text x="245" y="149" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#fb923c">★  gangster</text>
-
-  <!-- shakespeare -->
-  <rect x="335" y="130" width="130" height="28" rx="14" fill="#2e1065"/>
-  <rect x="335" y="130" width="130" height="28" rx="14" fill="none" stroke="#6d28d9" stroke-width="1"/>
-  <text x="400" y="149" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#c084fc">♕  shakespeare</text>
-
-  <!-- surfer -->
-  <rect x="490" y="130" width="130" height="28" rx="14" fill="#082f49"/>
-  <rect x="490" y="130" width="130" height="28" rx="14" fill="none" stroke="#0369a1" stroke-width="1"/>
-  <text x="555" y="149" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#38bdf8">〜  surfer</text>
-
-  <!-- cowboy -->
-  <rect x="645" y="130" width="130" height="28" rx="14" fill="#3b1100"/>
-  <rect x="645" y="130" width="130" height="28" rx="14" fill="none" stroke="#92400e" stroke-width="1"/>
-  <text x="710" y="149" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#fdba74">✦  cowboy</text>
-
-  <!-- ── Row 2: butler · yoda · noir · robot · chef ── -->
-
-  <!-- butler -->
-  <rect x="25" y="168" width="130" height="28" rx="14" fill="#1c1917"/>
-  <rect x="25" y="168" width="130" height="28" rx="14" fill="none" stroke="#44403c" stroke-width="1"/>
-  <text x="90" y="187" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#d6d3d1">◆  butler</text>
-
-  <!-- yoda -->
-  <rect x="180" y="168" width="130" height="28" rx="14" fill="#14532d"/>
-  <rect x="180" y="168" width="130" height="28" rx="14" fill="none" stroke="#15803d" stroke-width="1"/>
-  <text x="245" y="187" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#86efac">◉  yoda</text>
-
-  <!-- noir -->
-  <rect x="335" y="168" width="130" height="28" rx="14" fill="#0c0a09"/>
-  <rect x="335" y="168" width="130" height="28" rx="14" fill="none" stroke="#292524" stroke-width="1"/>
-  <text x="400" y="187" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#78716c">●  noir</text>
-
-  <!-- robot -->
-  <rect x="490" y="168" width="130" height="28" rx="14" fill="#042f2e"/>
-  <rect x="490" y="168" width="130" height="28" rx="14" fill="none" stroke="#0f766e" stroke-width="1"/>
-  <text x="555" y="187" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#2dd4bf">▣  robot</text>
-
-  <!-- chef -->
-  <rect x="645" y="168" width="130" height="28" rx="14" fill="#450a0a"/>
-  <rect x="645" y="168" width="130" height="28" rx="14" fill="none" stroke="#991b1b" stroke-width="1"/>
-  <text x="710" y="187" text-anchor="middle"
-        font-family="'SF Mono', 'Cascadia Code', 'Fira Code', monospace"
-        font-size="12" fill="#fca5a5">✦  chef</text>
 </svg>
