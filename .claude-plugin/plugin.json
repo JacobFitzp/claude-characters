@@ -2,13 +2,19 @@
   "name": "characters",
   "repository": "https://github.com/JacobFitzp/claude-characters",
   "homepage": "https://github.com/JacobFitzp/claude-characters",
-  "version": "1.1.0",
   "description": "Personality characters for Claude Code. Pirate, gangster, Shakespeare, Yoda, and more — full technical accuracy preserved.",
   "author": {
     "name": "Jacob Fitzpatrick",
     "email": "jacobfitzpatrick1303@gmail.com"
   },
-  "keywords": ["personality", "characters", "fun", "pirate", "shakespeare", "yoda"],
+  "keywords": [
+    "personality",
+    "characters",
+    "fun",
+    "pirate",
+    "shakespeare",
+    "yoda"
+  ],
   "hooks": {
     "SessionStart": [
       {
